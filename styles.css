@@ -1,0 +1,90 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eef5e3;
+    color: #333;
+}
+
+header {
+    background-color: #4a7c59;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #4a7c59;
+}
+
+#search-bar-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#search-bar {
+    padding: 10px;
+    width: 80%;
+    max-width: 500px;
+    border: 1px solid #4a7c59;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#plant-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.plant {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.plant img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #4a7c59;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    margin-top: 40px; /* Add space between footer and the content above */
+}
+
+#no-results {
+    text-align: center;
+    color: red;
+}
