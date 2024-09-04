@@ -1,7 +1,7 @@
 // JavaScript for the Virtual Herbal Garden
 
 const plants = [
-    { name: "Tulsi", botanicalName: "Ocimum tenuiflorum", habitat: "Tropical regions", uses: "Cold, cough, and respiratory issues", image: "tulsi.jpg" },
+    { name: "Tulsi", botanicalName: "Ocimum tenuiflorum", habitat: "Tropical regions", uses: "Cold, cough, and respiratory issues", image: "Tulsi.jpg" },
     { name: "Neem", botanicalName: "Azadirachta indica", habitat: "Subtropical regions", uses: "Skin care, blood purification", image: "neem.jpg" },
     { name: "Aloe Vera", botanicalName: "Aloe barbadensis", habitat: "Arid climates", uses: "Skin care, digestive health", image: "aloevera.jpg" },
     { name: "Ashwagandha", botanicalName: "Withania somnifera", habitat: "Dry regions", uses: "Stress relief, energy boost", image: "ashwagandha.jpg" },
