@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Detail - Kairos Virtual Herbal Garden</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .detail-container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .plant-detail img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .plant-detail h2 {
+            color: #4a7c59;
+        }
+
+        .plant-detail p {
+            margin-bottom: 15px;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #4a7c59;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .back-button:hover {
+            background-color: #3a5e47;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kairos Virtual Herbal Garden</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#explore">Explore</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="detail-container">
+            <!-- Details will be inserted here -->
+            <div class="plant-detail">
+                <img id="plant-image" src="" alt="Plant Image">
+                <h2 id="plant-name"></h2>
+                <p><strong>Botanical Name:</strong> <span id="botanical-name"></span></p>
+                <p><strong>Habitat:</strong> <span id="habitat"></span></p>
+                <p><strong>Uses:</strong> <span id="uses"></span></p>
+                <h3>Additional Images:</h3>
+                <div id="additional-images"></div>
+                <a href="index.html" class="back-button">Back to Home</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kairos Virtual Herbal Garden</p>
+    </footer>
+
+    <script src="detail.js"></script>
+</body>
+</html>

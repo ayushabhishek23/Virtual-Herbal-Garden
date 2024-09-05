@@ -53,7 +53,7 @@ h2 {
 
 #plant-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns based on your design */
     gap: 20px;
     padding: 20px;
     margin-top: 20px;
@@ -65,6 +65,12 @@ h2 {
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plant:hover {
+    transform: translateY(-10px); /* Moves the plant box up */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Adds a stronger shadow with more depth */
 }
 
 .plant img {
@@ -81,7 +87,7 @@ footer {
     position: relative;
     width: 100%;
     bottom: 0;
-    margin-top: 40px; /* Add space between footer and the content above */
+    margin-top: 40px;
 }
 
 #no-results {
