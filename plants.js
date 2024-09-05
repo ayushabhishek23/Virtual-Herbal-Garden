@@ -23,7 +23,7 @@ const plants = [
 
 function displayPlants(plants) {
     const plantContainer = document.getElementById('plant-container');
-    plantContainer.innerHTML = '';
+    plantContainer.innerHTML = ''; 
 
     if (plants.length === 0) {
         document.getElementById('no-results').style.display = 'block';
@@ -50,13 +50,6 @@ function displayPlants(plants) {
     }
 }
 
-displayPlants(plants);
-
-document.getElementById('search-bar').addEventListener('input', function(e) {
-    const searchQuery = e.target.value.toLowerCase();
-    const filteredPlants = plants.filter(plant => 
-        plant.name.toLowerCase().includes(searchQuery) ||
-        plant.botanicalName.toLowerCase().includes(searchQuery)
-    );
-    displayPlants(filteredPlants);
+document.addEventListener('DOMContentLoaded', () => {
+    displayPlants(plants);
 });

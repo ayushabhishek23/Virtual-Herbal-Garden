@@ -1,3 +1,4 @@
+/* General styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -28,6 +29,25 @@ nav ul li a {
     text-decoration: none;
 }
 
+#buttons-container {
+    margin-top: 20px;
+}
+
+.nav-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #4a7c59;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.nav-button:hover {
+    background-color: #3a5e47;
+}
+
 main {
     padding: 20px;
 }
@@ -37,23 +57,9 @@ h2 {
     color: #4a7c59;
 }
 
-#search-bar-container {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-#search-bar {
-    padding: 10px;
-    width: 80%;
-    max-width: 500px;
-    border: 1px solid #4a7c59;
-    border-radius: 8px;
-    font-size: 16px;
-}
-
 #plant-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr); 
     gap: 20px;
     padding: 20px;
     margin-top: 20px;
@@ -70,7 +76,7 @@ h2 {
 
 .plant:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); 
 }
 
 .plant img {
