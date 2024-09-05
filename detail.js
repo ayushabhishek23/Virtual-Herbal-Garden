@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search);
     const plantName = urlParams.get('name');
     
-    // Find the plant with the corresponding name
     const plant = plants.find(p => p.name === plantName);
 
     if (plant) {
@@ -12,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('uses').textContent = plant.uses;
         document.getElementById('plant-image').src = plant.image;
 
-        // Example of additional images; replace with actual images
         const additionalImages = [
             'additional-image1.jpg',
             'additional-image2.jpg'

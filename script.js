@@ -1,4 +1,3 @@
-// Define your plant data here
 const plants = [
     { name: "Tulsi", botanicalName: "Ocimum tenuiflorum", habitat: "Tropical regions", uses: "Cold, cough, and respiratory issues", image: "Tulsi.jpg" },
     { name: "Neem", botanicalName: "Azadirachta indica", habitat: "Subtropical regions", uses: "Skin care, blood purification", image: "neem.jpg" },
@@ -22,10 +21,9 @@ const plants = [
     { name: "Cardamom", botanicalName: "Elettaria cardamomum", habitat: "Tropical regions", uses: "Digestive aid, respiratory health", image: "cardamom.jpg" }
 ];
 
-// Function to display plant cards
 function displayPlants(plants) {
     const plantContainer = document.getElementById('plant-container');
-    plantContainer.innerHTML = ''; // Clear previous content
+    plantContainer.innerHTML = ''; 
 
     if (plants.length === 0) {
         document.getElementById('no-results').style.display = 'block';
@@ -43,7 +41,6 @@ function displayPlants(plants) {
                 <p><strong>Uses:</strong> ${plant.uses}</p>
             `;
 
-            // Add click event for redirection
             plantElement.addEventListener('click', () => {
                 window.location.href = `plant-detail.html?name=${encodeURIComponent(plant.name)}`;
             });
@@ -53,10 +50,8 @@ function displayPlants(plants) {
     }
 }
 
-// Initial display of plants
 displayPlants(plants);
 
-// Search functionality
 document.getElementById('search-bar').addEventListener('input', function(e) {
     const searchQuery = e.target.value.toLowerCase();
     const filteredPlants = plants.filter(plant => 
