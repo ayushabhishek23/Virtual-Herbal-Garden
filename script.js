@@ -23,7 +23,7 @@ const plants = [
 
 function displayPlants(plants) {
     const plantContainer = document.getElementById('plant-container');
-    plantContainer.innerHTML = ''; 
+    plantContainer.innerHTML = '';
 
     if (plants.length === 0) {
         document.getElementById('no-results').style.display = 'block';
