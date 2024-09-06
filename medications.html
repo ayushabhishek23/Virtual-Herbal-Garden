@@ -12,8 +12,6 @@
         <nav>
             <ul>
                 <li><a href="home.html">Home</a></li>
-                <li><a href="plants.html">Plants</a></li>
-                <li><a href="medications.html">Medications</a></li>
             </ul>
         </nav>
         <div id="buttons-container">
@@ -24,11 +22,16 @@
 
     <main>
         <h2>Medications</h2>
-        <p>Explore various medications and their benefits derived from medicinal plants. Information will be updated soon.</p>
+        <input type="text" id="search-bar-med" placeholder="Search medications...">
+        <div id="med-container">
+            <!-- Medication information will be dynamically inserted here by medications.js -->
+        </div>
     </main>
 
     <footer>
         <p>&copy; 2024 Kairos Virtual Herbal Garden</p>
     </footer>
+
+    <script src="medications.js"></script>
 </body>
 </html>

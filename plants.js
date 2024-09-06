@@ -18,12 +18,52 @@ const plants = [
     { name: "Peppermint", botanicalName: "Mentha piperita", habitat: "Temperate regions", uses: "Digestive health, headache relief", image: "peppermint.jpg" },
     { name: "Lemongrass", botanicalName: "Cymbopogon citratus", habitat: "Tropical regions", uses: "Digestive aid, anti-inflammatory", image: "Lemmon grass.jpg" },
     { name: "Saffron", botanicalName: "Crocus sativus", habitat: "Subtropical regions", uses: "Mood enhancer, skin care", image: "saffron.jpg" },
-    { name: "Cardamom", botanicalName: "Elettaria cardamomum", habitat: "Tropical regions", uses: "Digestive aid, respiratory health", image: "cardamom.jpg" }
+    { name: "Cardamom", botanicalName: "Elettaria cardamomum", habitat: "Tropical regions", uses: "Digestive aid, respiratory health", image: "cardamom.jpg" },
+    { name: "Eucalyptus", botanicalName: "Globulus Labill", habitat: "Tropical regions", uses: "Digestive aid, respiratory health", image: "Eucalyptus.jpg" },
+    { name: "Chamomile", botanicalName: "", habitat: "Tropical regions", uses: "Digestive aid, respiratory health", image: "Chamomile.jpg" },
+    { name: "Mullein", botanicalName: "", habitat: "Tropical regions", uses: "Digestive aid, respiratory health", image: "Mullein.jpg" },
+    { name: "Valerian", botanicalName: "", habitat: "Tropical regions", uses: "Digestive aid, respiratory health", image: "Valerian.jpg" },
+    { name: "Slippery Elm", botanicalName: "", habitat: "Tropical regions", uses: "Digestive aid, respiratory health", image: "Slippery elm.jpg" },
+    { name: "Dandelion", botanicalName: "", habitat: "Tropical regions", uses: "Digestive aid, respiratory health", image: "Dandelion.jpg" },
+    { name: "Kava", botanicalName: "", habitat: "Tropical regions", uses: "Digestive aid, respiratory health", image: "Kava.jpg" },
+    { name: "Sage", botanicalName: "", habitat: "Tropical regions", uses: "Digestive aid, respiratory health", image: "Sage.jpg" },
+    { name: "Milk Thistle", botanicalName: "", habitat: "Tropical regions", uses: "Digestive aid, respiratory health", image: "Milk thistle.jpg" },
+    { name: "Bitter Melon", botanicalName: "", habitat: "Tropical regions", uses: "Digestive aid, respiratory health", image: "Bitter melon.jpg" },
+    { name: "Calendula", botanicalName: "", habitat: "Tropical regions", uses: "Digestive aid, respiratory health", image: "Calendula.jpg" },
+    { name: "Blue Cohosh", botanicalName: "", habitat: "Tropical regions", uses: "Digestive aid, respiratory health", image: "Blue cohosh.jpg" },
+    { name: "Ashitaba", botanicalName: "", habitat: "Tropical regions", uses: "Digestive aid, respiratory health", image: "Ashitaba.jpg" },
+    { name: "Arnica", botanicalName: "", habitat: "Tropical regions", uses: "Digestive aid, respiratory health", image: "Arnica.jpg" },
+    { name: "Goldenseal", botanicalName: "", habitat: "Tropical regions", uses: "Digestive aid, respiratory health", image: "Goldenseal.jpg" },
+    { name: "Black Cohosh", botanicalName: "", habitat: "Tropical regions", uses: "Digestive aid, respiratory health", image: "Black cohosh.jpg" },
+    { name: "Catnip", botanicalName: "", habitat: "Tropical regions", uses: "Digestive aid, respiratory health", image: "Catnip.jpg" },
+    { name: "Bitter Leaf", botanicalName: "", habitat: "Tropical regions", uses: "Digestive aid, respiratory health", image: "Bitter leaf.jpg" },
+    { name: "Hibiscus", botanicalName: "", habitat: "Tropical regions", uses: "Digestive aid, respiratory health", image: "Hibiscus.jpg" },
+    { name: "Rosemary", botanicalName: "", habitat: "Tropical regions", uses: "Digestive aid, respiratory health", image: "Rosemary.jpg" },
+    { name: "Boswellia", botanicalName: "", habitat: "Tropical regions", uses: "Digestive aid, respiratory health", image: "Boswellia.jpg" },
+    { name: "Echinacea", botanicalName: "", habitat: "Tropical regions", uses: "Digestive aid, respiratory health", image: "Echinacea.jpg" },
+    { name: "Kudzu", botanicalName: "", habitat: "Tropical regions", uses: "Digestive aid, respiratory health", image: "Kudzu.jpg" },
+    { name: "Lesser Burdock", botanicalName: "", habitat: "Tropical regions", uses: "Digestive aid, respiratory health", image: "Lesser burdock.jpg" },
+    { name: "Horsetail", botanicalName: "", habitat: "Tropical regions", uses: "Digestive aid, respiratory health", image: "Horsetail.jpg" },
+    { name: "Comfrey", botanicalName: "", habitat: "Tropical regions", uses: "Digestive aid, respiratory health", image: "Comfrey.jpg" },
+    { name: "Passion Flower", botanicalName: "", habitat: "Tropical regions", uses: "Digestive aid, respiratory health", image: "Passion flower.jpg" },
+    { name: "Devil's Claw", botanicalName: "", habitat: "Tropical regions", uses: "Digestive aid, respiratory health", image: "Devil's claw.jpg" },
+    { name: "Yarrow", botanicalName: "", habitat: "Tropical regions", uses: "Digestive aid, respiratory health", image: "Yarrow.jpg" },
+    { name: "Rhodiola", botanicalName: "", habitat: "Tropical regions", uses: "Digestive aid, respiratory health", image: "Rhodiora.jpg" },
+    { name: "Lemon Balm", botanicalName: "", habitat: "Tropical regions", uses: "Digestive aid, respiratory health", image: "Lemon balm.jpg" },
+    { name: "Gotukola", botanicalName: "", habitat: "Tropical regions", uses: "Digestive aid, respiratory health", image: "Gotukola.jpg" },
+    { name: "Sage Brush", botanicalName: "", habitat: "Tropical regions", uses: "Digestive aid, respiratory health", image: "Sage brush.jpg" },
+    { name: "Datura", botanicalName: "", habitat: "Tropical regions", uses: "Digestive aid, respiratory health", image: "Datura.jpg" },
+    { name: "Suma Root", botanicalName: "", habitat: "Tropical regions", uses: "Digestive aid, respiratory health", image: "Suma Root.jpg" },
+    { name: "Astragalus", botanicalName: "", habitat: "Tropical regions", uses: "Digestive aid, respiratory health", image: "Astragalus.jpg" },
+    { name: "Marshmallow", botanicalName: "", habitat: "Tropical regions", uses: "Digestive aid, respiratory health", image: "Marshmallow.jpg" },
+    { name: "Baiklal Skullcap", botanicalName: "", habitat: "Tropical regions", uses: "Digestive aid, respiratory health", image: "Baiklal Skullcap.jpg" },
+    { name: "Chanca Piedra", botanicalName: "", habitat: "Tropical regions", uses: "Digestive aid, respiratory health", image: "Chanca Piedra.jpg" },
+    { name: "Ephedra", botanicalName: "", habitat: "Tropical regions", uses: "Digestive aid, respiratory health", image: "Ephedra.jpg" },
 ];
 
 function displayPlants(plants) {
     const plantContainer = document.getElementById('plant-container');
-    plantContainer.innerHTML = ''; 
+    plantContainer.innerHTML = '';
 
     if (plants.length === 0) {
         document.getElementById('no-results').style.display = 'block';
@@ -41,15 +81,23 @@ function displayPlants(plants) {
                 <p><strong>Uses:</strong> ${plant.uses}</p>
             `;
 
-            plantElement.addEventListener('click', () => {
-                window.location.href = `plant-detail.html?name=${encodeURIComponent(plant.name)}`;
-            });
-
             plantContainer.appendChild(plantElement);
         });
     }
 }
 
+function searchPlants() {
+    const query = document.getElementById('search-bar').value.toLowerCase();
+    const filteredPlants = plants.filter(plant => 
+        plant.name.toLowerCase().includes(query) ||
+        plant.botanicalName.toLowerCase().includes(query) ||
+        plant.habitat.toLowerCase().includes(query) ||
+        plant.uses.toLowerCase().includes(query)
+    );
+    displayPlants(filteredPlants);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     displayPlants(plants);
+    document.getElementById('search-bar').addEventListener('input', searchPlants);
 });

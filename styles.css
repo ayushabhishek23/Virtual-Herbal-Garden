@@ -57,15 +57,25 @@ h2 {
     color: #4a7c59;
 }
 
-#plant-container {
+#search-bar, #search-bar-med {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#plant-container, #med-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
     gap: 20px;
     padding: 20px;
     margin-top: 20px;
 }
 
-.plant {
+.plant, .medication {
     text-align: center;
     background-color: #f9f9f9;
     padding: 15px;
@@ -74,12 +84,12 @@ h2 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.plant:hover {
+.plant:hover, .medication:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); 
 }
 
-.plant img {
+.plant img, .medication img {
     width: 100%;
     height: auto;
     border-radius: 8px;
